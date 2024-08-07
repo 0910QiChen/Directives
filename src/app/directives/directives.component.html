@@ -1,0 +1,7 @@
+
+<div *ngFor="let number of numbers; let i = index">
+    <div [ngStyle]="{'margin-bottom': '10px'}">
+        {{ number }}
+        <button type="button" (click)="removeNumber(i)">remove</button>
+    </div>
+</div>
